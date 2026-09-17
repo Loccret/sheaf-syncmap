@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sheaf-syncmap"
+version = "0.1.0"
+description = "Minimal reproducible Sheaf SyncMap experiments"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+dependencies = [
+  "networkx",
+  "numpy",
+  "pyyaml",
+  "scikit-learn",
+  "scipy",
+  "tensorboard",
+  "torch",
+  "tqdm",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

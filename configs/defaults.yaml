@@ -1,0 +1,59 @@
+data:
+  root: data/probabilistic
+train:
+  device: auto
+  num_threads: 1
+  graph_names:
+  - probabilistic75_8.dot
+  - probabilistic30_20.dot
+  - probabilistic15_40.dot
+  - probabilistic8_75.dot
+  - probabilistic4_150.dot
+  map_dimensions: 3
+  max_seq_length: 80000
+  seed: 0
+  state_memory: dynamic
+model:
+  adaptation_rate: 0.0005
+  attract_range: 0.9
+  fix_seed: true
+  history_repel_factor: 27800
+  history_repel_multiplier: 1
+  max_past_activate: 0.5896531881162175
+  max_track_length: 20
+  minus_exp_factor: 0.7
+  minus_factor: 1.5
+  normalization: true
+  plus_exp_factor: 0.8
+  plus_factor: 0.5
+  radial_regularization:
+    cg_absolute_tolerance: 1.0e-08
+    cg_max_iterations: 50
+    cg_preconditioner: jacobi
+    cg_relative_tolerance: 1.0e-05
+    decay_base: 10
+    distance_epsilon: 1.0e-10
+    edge_gate_selector: mean
+    implicit_strength: 1
+    min_distance: 1.0e-06
+    mode: implicit
+    normalize_implicit_edge_weights: identical
+    pure_repeller_sheaf_strength: 200.0
+    sheaf_launch_delay: 5000
+    sheaf_repeller_with_history: true
+    solver_failure: use_last_iterate
+    strain_mode: relative
+  repel_range: 1.9
+  single_direction_repel_history: true
+  std_factor: 0.1
+  use_tqdm: true
+eval:
+  eps_start: 0.4
+  eps_step: 0.4
+  eps_stop: 15.0
+  history_window_end_step: -100
+  history_window_start_step: -2100
+  min_samples: 2
+logging:
+  valid_every: 100
+  tensorboard_dir: tb_logs

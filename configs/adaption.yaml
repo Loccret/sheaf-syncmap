@@ -1,0 +1,4 @@
+arms:
+- name: sheaf-syncmap
+  mode: implicit
+  directional_history: true

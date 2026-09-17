@@ -1,0 +1,13 @@
+arms:
+- name: decentralized-syncmap
+  mode: baseline
+  directional_history: false
+- name: directional-history
+  mode: baseline
+  directional_history: true
+- name: sheaf-only
+  mode: implicit
+  directional_history: false
+- name: sheaf-syncmap
+  mode: implicit
+  directional_history: true
