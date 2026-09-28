@@ -1,6 +1,6 @@
 # Sheaf SyncMap
 
-An implementation of Sheaf SyncMap, with continuous adaptation and a two-factor ablation experiment. For details, see the paper: Stable Unsupervised Continual Chunking with Sheaf SyncMap
+An implementation of Sheaf SyncMap, with continuous adaptation and a two-factor ablation experiment. For details, see the paper: [Stable Unsupervised Continual Chunking with Sheaf SyncMap](https://arxiv.org/abs/2609.25143)
 
 ![Sheaf SyncMap's 3D space, NMI, and local B_RMS during five-stage adaptation](assets/sheaf_adaptation.gif)
 
